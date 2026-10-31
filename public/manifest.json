@@ -1,0 +1,25 @@
+{
+  "short_name": "QuickX",
+  "name": "QuickX — Обмен криптовалют по всему миру",
+  "description": "Быстрый и безопасный обмен криптовалют по всему миру. USDT, BTC, ETH на наличные. Выгодные курсы, конфиденциально.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#03110d",
+  "background_color": "#03110d",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
