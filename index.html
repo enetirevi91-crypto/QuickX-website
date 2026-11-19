@@ -1,12 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NMD2K3P2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+
+      })(window,document,'script','dataLayer','GTM-NMD2K3P2');
     </script>
     <!-- End Google Tag Manager -->
 
@@ -25,20 +38,28 @@
       name="description"
       content="QuickX — быстрый и безопасный обмен криптовалют по всему миру. USDT, BTC, ETH на наличные и обратно. Выгодные курсы, конфиденциально, 24/7."
     />
+
     <meta
       name="keywords"
       content="обмен криптовалют, QuickX, quickx.club, USDT, BTC, ETH, криптообменник, международный обмен, обмен наличных"
     />
+
     <meta name="author" content="QuickX" />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="QuickX — Обмен криптовалют по всему миру" />
+
+    <meta
+      property="og:title"
+      content="QuickX — Обмен криптовалют по всему миру"
+    />
+
     <meta
       property="og:description"
       content="Быстрый и безопасный обмен криптовалют по всему миру. USDT, BTC, ETH на наличные. Выгодные курсы, конфиденциально."
     />
+
     <meta property="og:image" content="/assets/logo.png" />
     <meta property="og:url" content="https://quickx.club/" />
     <meta property="og:site_name" content="QuickX" />
@@ -46,15 +67,40 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="QuickX — Обмен криптовалют по всему миру" />
-    <meta name="twitter:description" content="Быстрый и безопасный обмен криптовалют по всему миру. USDT, BTC, ETH на наличные." />
+
+    <meta
+      name="twitter:title"
+      content="QuickX — Обмен криптовалют по всему миру"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Быстрый и безопасный обмен криптовалют по всему миру. USDT, BTC, ETH на наличные."
+    />
+
     <meta name="twitter:image" content="/assets/logo.png" />
 
     <link rel="manifest" href="/manifest.json" />
   </head>
+
   <body>
-    <noscript>Для работы сайта необходимо включить JavaScript.</noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMD2K3P2"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <noscript>
+      Для работы сайта необходимо включить JavaScript.
+    </noscript>
+
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
